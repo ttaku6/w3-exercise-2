@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .item {
+      padding: 10px;
+      background-color: lightgray;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .item:hover {
+      opacity: 1;
+    }
+
+    .item:hover ~ .item {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+  </div>
+</body>
+</html>
+
